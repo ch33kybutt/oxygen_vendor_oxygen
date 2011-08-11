@@ -3,10 +3,10 @@
 #
 ifdef OXYGEN_RELEASE
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=Oxygen-2.2.2
+        ro.modversion=OxygeN1mod-2.2.2
 else
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=Oxygen-TEST
+        ro.modversion=OxygeN1mod-TEST
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += ro.rommanager.developerid=adamg
@@ -32,7 +32,7 @@ PRODUCT_PACKAGES += \
     screenshot \
     su
 
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
+#PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=Sceptrum.ogg \
