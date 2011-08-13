@@ -3,10 +3,10 @@
 #
 ifdef OXYGEN_RELEASE
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=OxygeN1mod-2.2.2
+        ro.modversion=OxygeN1mod-$(shell date +%Y.%m.%d)
 else
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=OxygeN1mod-TEST
+        ro.modversion=OxygeN1mod-TEST-$(shell date +%Y.%m.%d)
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += ro.rommanager.developerid=adamg

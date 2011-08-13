@@ -38,3 +38,7 @@ PRODUCT_PACKAGES += \
 
 # Extra passion overlay
 #PRODUCT_PACKAGE_OVERLAYS += vendor/devnull/overlay/passion
+
+PRODUCT_COPY_FILES +=  \
+    vendor/devnull/proprietary/TrackballAlert.apk:system/app/TrackballAlert.apk \
+    vendor/devnull/proprietary/libnative.so:system/lib/libnative.so
