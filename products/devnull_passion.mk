@@ -34,7 +34,20 @@ PRODUCT_PACKAGES += \
     FM \
     hcitool \
     DSPManager \
-    libcyanogen-dsp
+    libcyanogen-dsp \
+    libFLAC
 
+PRODUCT_COPY_FILES += \
+    vendor/devnull/prebuilt/etc/hosts:system/etc/hosts \
+    vendor/devnull/prebuilt/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
+    vendor/devnull/prebuilt/etc/init.d/04modules:system/etc/init.d/04modules \
+    vendor/devnull/prebuilt/etc/init.d/05mountsd:system/etc/init.d/05mountsd \
+    vendor/devnull/prebuilt/etc/init.d/06mountdl:system/etc/init.d/06mountdl \
+    vendor/devnull/prebuilt/etc/init.d/20userinit:system/etc/init.d/20userinit \
+    vendor/devnull/prebuilt/etc/init.d/99complete:system/etc/init.d/99complete \
+    vendor/devnull/prebuilt/xbin/e2fsck:system/xbin/e2fsck \
+    vendor/devnull/prebuilt/xbin/tune2fs:system/xbin/tune2fs \
+    vendor/devnull/prebuilt/xbin/sqlite3:system/xbin/sqlite3
+    
 # Extra passion overlay
 #PRODUCT_PACKAGE_OVERLAYS += vendor/devnull/overlay/passion

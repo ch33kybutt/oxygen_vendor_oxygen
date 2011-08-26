@@ -132,9 +132,6 @@ system/xbin/tcpdump
 system/xbin/timeinfo
 system/xbin/vfp-crasher"
 
-# Removed from DELETE_ENG
-# system/xbin/sqlite3
-
 REPACK=$OUT/repack.d
 printf "Sanitizing environment..."
 rm -rf $REPACK

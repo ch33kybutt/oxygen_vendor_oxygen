@@ -31,11 +31,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     screenshot \
     su
-
-# flac library
-PRODUCT_PACKAGES += \
-    libFLAC
-        
+     
 #PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 PRODUCT_PROPERTY_OVERRIDES += \
