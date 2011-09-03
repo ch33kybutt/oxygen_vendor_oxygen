@@ -50,4 +50,4 @@ PRODUCT_COPY_FILES += \
     vendor/devnull/prebuilt/xbin/sqlite3:system/xbin/sqlite3
     
 # Extra passion overlay
-#PRODUCT_PACKAGE_OVERLAYS += vendor/devnull/overlay/passion
+PRODUCT_PACKAGE_OVERLAYS += vendor/devnull/overlay/passion
