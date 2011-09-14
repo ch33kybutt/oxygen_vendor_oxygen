@@ -39,6 +39,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     vendor/devnull/prebuilt/etc/hosts:system/etc/hosts \
+    vendor/devnull/prebuilt/etc/resolv.conf:system/etc/resolv.conf \
     vendor/devnull/prebuilt/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
     vendor/devnull/prebuilt/etc/init.d/04modules:system/etc/init.d/04modules \
     vendor/devnull/prebuilt/etc/init.d/05mountsd:system/etc/init.d/05mountsd \
