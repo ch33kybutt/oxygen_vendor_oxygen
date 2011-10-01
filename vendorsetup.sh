@@ -1,7 +1,7 @@
-add_lunch_combo devnull_bravo-user
-add_lunch_combo devnull_bravoc-user
-add_lunch_combo devnull_crespo-user
-add_lunch_combo devnull_crespo4g-user
-add_lunch_combo devnull_galaxys2-eng
-add_lunch_combo devnull_passion-eng
-add_lunch_combo devnull_passion-user
+add_lunch_combo oxygen_bravo-user
+add_lunch_combo oxygen_bravoc-user
+add_lunch_combo oxygen_crespo-user
+add_lunch_combo oxygen_crespo4g-user
+add_lunch_combo oxygen_galaxys2-eng
+add_lunch_combo oxygen_passion-eng
+add_lunch_combo oxygen_passion-user

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# Squish a devnull otapackage for distribution
+# Squish a oxygen otapackage for distribution
 # original script by cyanogen
 #
 
@@ -31,7 +31,7 @@ if [ ! -f "$OTAPACKAGE" ]; then
 	exit 1
 fi
 
-OPTICHARGER=$ANDROID_BUILD_TOP/vendor/devnull/tools/opticharger
+OPTICHARGER=$ANDROID_BUILD_TOP/vendor/oxygen/tools/opticharger
 QUIET=-q
 DELETE_BINS="applypatch applypatch_static check_prereq recovery updater dump_image erase_image flash_image"
 
@@ -75,9 +75,10 @@ DATE=`date +%d%m%y-%H%M`
 # Determine what to name the new signed package
 if [ ! -z "$OXYGEN_RELEASE" ]; then
         MODVERSION=`sed -n -e'/ro\.modversion/s/^.*OxygeN1mod-//p' $REPACK/ota/system/build.prop`
-        OUTFILE=$OUT/update-oxygen-$MODVERSION-signed.zip
+	: ${MODVERSION:=nightly}
+	OUTFILE=$OUT/update-oxygen-$MODVERSION-signed.zip
 else
-        OUTFILE=$OUT/update-oxygen-test-$DATE-signed.zip
+	OUTFILE=$OUT/update-squished.zip
 fi
 
 # Pack it up and sign
@@ -107,4 +108,5 @@ echo
 )
 
 exit 0
+
 
