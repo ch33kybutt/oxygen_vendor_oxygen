@@ -27,7 +27,8 @@ PRODUCT_PACKAGES += \
     DSPManager \
     libcyanogen-dsp \
     libFLAC \
-    VoiceDialer
+    VoiceDialer \
+    FileManager
 
 PRODUCT_COPY_FILES += \
     vendor/oxygen/prebuilt/etc/resolv.conf:system/etc/resolv.conf \
